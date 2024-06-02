@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
-const PORT = 5000;
+const PORT = 5001;
 
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
-const routes = require('./router/routes.js');
+const routes = require('./routes.js');
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended:false}));
